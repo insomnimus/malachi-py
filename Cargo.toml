@@ -1,0 +1,12 @@
+[package]
+name = "malachi-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "malachi"
+crate-type = ["cdylib"]
+
+[dependencies]
+malachi = "0.9.1"
+pyo3 = { version = "0.16.3", features = ["extension-module"] }
